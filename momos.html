@@ -1,0 +1,353 @@
+#momos-filename
+
+<html>
+<head>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+<style>
+*{
+font-family:serif;
+}
+#c1,#c2,#c3{
+border-radius:0px;
+box-shadow:none;
+width:1000px;
+height:600px;
+margin:auto;
+}
+#icon{
+width:70px;
+height:70px;
+border-radius:50%;
+}
+section #p1{
+background-color:white;
+border-radius:20px;
+width:310px;
+height:auto;
+padding:15px;
+
+}
+section #p1:hover{
+box-shadow:1px 2px 5px black;
+transition-duration:1s;
+border-radius:20px;
+}
+#item1{
+width:280px;
+height:250px;
+border-radius:20px;
+}
+</style>
+</head>
+<body>
+
+<!--------------------------------------------------------------nav-------------------------------------------------------->
+
+<nav class="one container-fluid bg-white fixed-top">
+<div class="container-fluid">
+<div class="row"><div class="col" style="font-size:20px;color:brown;text-shadow:1px 1px 3px brown"><img id="icon" src="data:image/jpeg;base64,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">
+MOMOS</div>
+<div style="border:2px solid grey;border-radius:20px;height:30px;box-shadow:2px 2px 3px grey;width:250px">search for your dish
+    &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp<i class="bi-search"></i></div>
+    <div  style="border:2px solid grey;border-radius:20px;height:30px;box-shadow:2px 2px 3px grey;width:150px">location
+    &nbsp &nbsp &nbsp &nbsp <i class="bi bi-geo-alt-fill"></i></div>
+    <div  style="border:2px solid grey;border-radius:20px;height:30px;box-shadow:2px 2px 3px grey;width:180px">choose restaurant
+    
+     &nbsp &nbsp <i class="bi bi-house-door-fill"></i></div>
+    
+    <div class="col-2 d-none d-sm-block" active style="font-size:20px;color:black">login|signup<i class="bi bi-box-arrow-in-right "></i> </div>
+    
+    
+<!------------------------------------------------offcanvas--------------------------------------------->
+<!------------------------------------------------offcanvas--------------------------------------------->
+<div class="col-2 "  data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" style="font-size:20px;color:grey"active>
+<i class="bi bi-toggle-on" style="font-size:30px"></i></button>
+
+<div class="offcanvas offcanvas-end" id="offcanvasRight">
+  <div class="offcanvas-header">
+    <h1 class="offcanvas-title text-dark" id="offcanvasRightLabel">LOGIN DETAILS</h1>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+   
+<div class="container  text-dark" >
+<div class="row">
+<div class="col"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuPRVGx4ZNIeQ7sMzFQrIaZM--NaEpSNlw6g&usqp=CAU"  style="width:100px;height:100px"></div>
+<div class="col">RUCHITHA.K<br>id:@its_me_ruchitha08</div>
+<div class="col mt-3"  style="font-size:25px"><p><a href="mainpage.html" class="nav-link"><i class="bi bi-house-door-fill mx-3"></i>Home</p>
+<p><i class="bi bi-gear-fill mx-3"></i>Settings</p>
+<p><i class="bi bi-save-fill mx-3"></i>Saved</p>
+<p><i class="bi bi-star-fill mx-3"></i>Most ordered</p>
+<p><i class="bi bi-bell-fill mx-3"></i>Notifications</p>
+<p><i class="bi bi-geo-alt-fill mx-3"></i>Location</p>
+<p><i class="bi bi-person-lines-fill mx-3"></i>Contact</p>
+<p><i class="bi bi-box-arrow-right mx-3"></i>Logout</p>
+</div>
+
+
+</div>
+</div>
+  </div>
+
+</div></div></div>
+
+<!-----------------------------------------offcanvas end-------------------------------------------------------------->
+
+
+
+</div></div>
+
+
+
+
+
+
+
+
+<div class="container">
+<div class="row">
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+<div class="col-1-sm mx-3"style="border:2px solid grey;border-radius:20px;height:30px;box-shadow:2px 2px 3px grey;width:90px"><div class="btn-group">
+<a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">pure veg</a>
+<div class="dropdown-menu">
+  <a class="dropdown-item" href="#" >paneer</a>
+  <a href="#" class="dropdown-item">cakes</a>
+<a href="#" class="dropdown-item">veg rolls</a>
+<a href="#" class="dropdown-item">Thali</a>
+<a href="#" class="dropdown-item">Noodles</a>
+<a href="momos.html" class="dropdown-item">momos</a>
+<a href="pizza.html" class="dropdown-item">pizza</a></div></div></div>
+<div class="col-1-sm mx-3"style="border:2px solid grey;border-radius:20px;height:30px;box-shadow:2px 2px 3px grey;width:90px"><div class="btn-group">
+<a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">non veg</a>
+<div class="dropdown-menu">
+  <a class="dropdown-item" href="biriyani.html" >biriyani</a>
+  <a href="#" class="dropdown-item">chicken</a>
+<a href="#" class="dropdown-item">non veg rolls</a>
+<a href="#" class="dropdown-item">burgers</a>
+<a href="#" class="dropdown-item">cakes</a></div></div></div>
+
+
+<div class="col-1-sm mx-3"style="border:2px solid grey;border-radius:20px;height:30px;box-shadow:2px 2px 3px grey;width:90px">
+  <b class="nav-link dropdown-toggle" data-bs-toggle="dropdown">cuisines</b>
+<div class="dropdown-menu">
+  <div class="dropdown-item" ><input type="text" class="form-control-sm m-1 bg-light "placeholder="search here" style="width:150px;font-size:20px">
+<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></div>
+
+ <span href="#" class="dropdown-item"><a href="momos.html" class="nav-link"><input type="checkbox" class="form-check-input" id="check1" name="option1" value="something">momos</a></span>
+
+
+<span href="#" class="dropdown-item "><a href="biriyani.html" class="nav-link"><input type="checkbox" class="form-check-input" id="check1" name="option1" value="something">biryani</a></span>
+
+<span href="#" class="dropdown-item"><input type="checkbox" class="form-check-input" id="check1" name="option1" value="something">burger</span>
+<span href="#" class="dropdown-item"><input type="checkbox" class="form-check-input" id="check1" name="option1" value="something">bakery</span>
+<span href="#" class="dropdown-item"><input type="checkbox" class="form-check-input" id="check1" name="option1" value="something">bubble tea</span>
+<span href="#" class="dropdown-item"><a href="pizza.html" class="nav-link"><input type="checkbox" class="form-check-input" id="check1" name="option1" value="something">pizza</a></span>
+ </div></div>
+
+
+<div class="col-1-sm mx-3"style="border:2px solid grey;border-radius:20px;height:30px;box-shadow:2px 2px 3px grey;width:120px">ratings 4.0+</div>
+<div class="col-1-sm mx-3"style="border:2px solid grey;border-radius:20px;height:30px;box-shadow:2px 2px 3px grey;width:140px">more filters &nbsp <i class="bi bi-sort-down"></i></div>
+</div></div><br>
+</nav>
+<br><br>
+<br><br><br><br>
+
+<!-------------------------------------------------------------carousel--------------------------------------------->
+<div class="container-sm my-3"> 
+<div class="carousel slide" data-bs-ride="carousel" id="mycarousel">
+
+<!---------------------------------------------------------carousel indicators----------------------------------------->
+<ol class="carousel-indicators">
+<li data-bs-target="#mycarousel" data-bs-slide-to="0" class="active"></li>
+<li data-bs-target="#mycarousel" data-bs-slide-to="1" ></li>
+<li data-bs-target="#mycarousel" data-bs-slide-to="2" ></li>
+</ol>
+<!--------------------------------------------------------carousel items-------------------------------------------------->
+<div class="carousel-inner">
+<div class="carousel-item active">
+<img id="c1" src="https://b.zmtcdn.com/data/dish_photos/634/3f63ea8e4797a46ff8a676b2ac55b634.jpg" class="d-block w-100" alt="slide 1">
+</div>
+<div class="carousel-item">
+<img id="c2"src="https://b.zmtcdn.com/data/dish_photos/61e/3670951119870dcc24c3d7813549b61e.png"class="d-block w-100" alt="slide 2">
+</div>
+<div class="carousel-item">
+<img id="c3" src="https://b.zmtcdn.com/data/dish_photos/cdf/70d09c59f315f99037e8c335fa2abcdf.jpg" class="d-block w-100" alt="slide3">
+</div>
+</div>
+<!--------------------------------------------------------------carousel controls----------------------------------------------------->
+<a href="#mycarousel" class="carousel-control-prev w-50" data-bs-slide="prev">
+<span class="carousel-control-prev-icon"></span></a>
+<a href="#mycarousel" class="carousel-control-next w-50" data-bs-slide="next">
+<span class="carousel-control-next-icon"></span></a>
+</div>
+
+</div>
+<br>
+<p style="font-size:40px;color:brown;text-align:center">INTRODUCING FRESHLY STREAMED MOMO!</p>
+
+<!---------------------------------------------------------images------------------------------------->
+<br>
+
+<section class="container-sm">
+<div class="row">
+<!--------------------------------pic1-------------------------->
+
+<div class="col"><section id="p1"><div class="card img-fluid" style="border-radius:20px"><img id="item1" src="https://b.zmtcdn.com/data/dish_photos/697/e4a51ef7ac44238d5decaa8483fb3697.jpg" class="card-image-top">
+<div class="card-img-overlay text-white">
+<h3 class="card-title" style="margin-top:150px">50% OFF</h3><p style="font-size:20px">UPTO 100/- </p></div></div><span style="font-size:20px">The greener side</span>
+<i class="bi bi-star-fill text-white bg-success p-1" style="border-radius:50px;margin-left:30px"></i><span style="font-size:20px;padding:10px">4.5</span><br>
+<span style="font-size:19px">Fast food,italian...</span><hr>
+<span> Tirumala .9.7km</span> &nbsp <span class="btn btn-success mx-2" style="font-size:20px">order now</span></section></div>
+<!---------------------------------------pic2-------------------------------->
+
+<div class="col"><section id="p1"><div class="card img-fluid" style="border-radius:20px"><img id="item1"src="https://b.zmtcdn.com/data/dish_photos/439/4f0d6c0e47e4375b2084f373fb84d439.jpg">
+<div class="card-img-overlay text-white">
+<h1 class="card-title" style="margin-top:150px;font-size:30px"> 60% OFF</h1><h3 style="font-size:20px">UPTO 150/- </h3></div></div>
+<span style="font-size:20px"> Agarwal food court</span>
+<i class="bi bi-star-fill text-white bg-success p-1" style="border-radius:50px;margin-left:30px"></i><span style="font-size:20px;padding:10px">4.1</span><br>
+<span style="font-size:19px">South indian,chinese..</span><hr>
+<span> Korlagunta .5.7km </span><span class="btn btn-success mx-2" style="font-size:20px">order now</span></section></div>
+
+
+<!---------------------------------------pic3-------------------------------->
+
+<div class="col"><section id="p1"><div class="card img-fluid" style="border-radius:20px"><img id="item1"src="https://b.zmtcdn.com/data/dish_photos/4e3/dc70b2e7ef43c7697fdd53f19e9304e3.jpg">
+<div class="card-img-overlay text-white">
+<h1 class="card-title" style="margin-top:150px;font-size:30px"> 40% OFF</h1><h3 style="font-size:20px">UPTO 100/- </h3></div></div>
+<span style="font-size:20px"> Momos island</span>
+<i class="bi bi-star-fill text-white bg-success p-1" style="border-radius:50px;margin-left:50px"></i><span style="font-size:20px;padding:10px">4.2</span><br>
+<span style="font-size:19px">Momos,rolls</span><hr>
+<span> tirumala .6.7km </span><span class="btn btn-success mx-4" style="font-size:20px">order now</span></section></div>
+
+
+
+<!---------------------------------------pic4-------------------------------->
+
+<div class="col my-5"><section id="p1"><div class="card img-fluid" style="border-radius:20px"><img id="item1"src="https://b.zmtcdn.com/data/dish_photos/8fb/35564b7aed65966296619112c42fd8fb.jpg">
+<div class="card-img-overlay text-white">
+<h1 class="card-title" style="margin-top:150px;font-size:30px"> 55% OFF</h1><h3 style="font-size:20px">UPTO 200/- </h3></div></div>
+<span style="font-size:20px">Bikanervala </span>
+<i class="bi bi-star-fill text-white bg-success p-1" style="border-radius:50px;margin-left:50px"></i><span style="font-size:20px;padding:10px">3.9</span><br>
+<span style="font-size:19px">Street food,north indian</span><hr>
+<span> tata nagar .12.7km </span><span class="btn btn-success mx-2" style="font-size:20px">order now</span></section></div>
+
+
+
+
+
+<!---------------------------------------pic5-------------------------------->
+
+<div class="col my-5"><section id="p1"><div class="card img-fluid" style="border-radius:20px"><img id="item1"src="https://b.zmtcdn.com/data/dish_photos/32a/68299ea328a91b569f4d6577d145132a.jpg">
+<div class="card-img-overlay text-white">
+<h1 class="card-title" style="margin-top:150px;font-size:30px"> 30% OFF</h1><h3 style="font-size:20px">UPTO 160/- </h3></div></div>
+<span style="font-size:20px">The briston momos</span>
+<i class="bi bi-star-fill text-white bg-success p-1" style="border-radius:50px;margin-left:30px"></i><span style="font-size:20px;padding:10px">4.4</span><br>
+<span style="font-size:19px">momos</span><hr>
+<span> gandhi nagar .13.7km </span><span class="btn btn-success " style="font-size:20px">order now</span></section></div>
+
+
+
+
+
+
+<!---------------------------------------pic6-------------------------------->
+
+<div class="col my-5"><section id="p1"><div class="card img-fluid" style="border-radius:20px"><img id="item1"src="https://b.zmtcdn.com/data/dish_photos/040/1d646afdd33dc7529ed8c30b329b4040.jpg">
+<div class="card-img-overlay text-white">
+<h1 class="card-title" style="margin-top:150px;font-size:30px"> 45% OFF</h1><h3 style="font-size:20px">UPTO 190/- </h3></div></div>
+<span style="font-size:20px"> Masala house</span>
+<i class="bi bi-star-fill text-white bg-success p-1" style="border-radius:50px;margin-left:50px"></i><span style="font-size:20px;padding:10px">4.7</span><br>
+<span style="font-size:19px">North indian,kebab</span><hr>
+<span> thiruchanur .7.9km </span><span class="btn btn-success mx-2" style="font-size:20px">order now</span></section></div>
+
+
+
+
+
+<!---------------------------------------pic7-------------------------------->
+
+<div class="col my-1"><section id="p1"><div class="card img-fluid" style="border-radius:20px"><img id="item1"src="https://b.zmtcdn.com/data/dish_photos/806/ee28df3eec8c23b09f3147720076e806.jpg">
+<div class="card-img-overlay text-white">
+<h1 class="card-title" style="margin-top:150px;font-size:30px"> 60% OFF</h1><h3 style="font-size:20px">UPTO 300/- </h3></div></div>
+<span style="font-size:20px">Kathi express</span>
+<i class="bi bi-star-fill text-white bg-success p-1" style="border-radius:50px;margin-left:50px"></i><span style="font-size:20px;padding:10px">4.8</span><br>
+<span style="font-size:19px">Rolls,kebab</span><hr>
+<span> tirupati .3.9km </span><span class="btn btn-success mx-2" style="font-size:20px">order now</span></section></div>
+
+
+
+
+<!---------------------------------------pic8-------------------------------->
+
+<div class="col my-1"><section id="p1"><div class="card img-fluid" style="border-radius:20px"><img id="item1"src="https://b.zmtcdn.com/data/pictures/1/19276971/83ba7c880ae8ad966e298f9774f3ea67_o2_featured_v2.png">
+<div class="card-img-overlay text-white">
+<h1 class="card-title" style="margin-top:150px;font-size:30px"> 30% OFF</h1><h3 style="font-size:20px">UPTO 150/- </h3></div></div>
+<span style="font-size:20px">Thapas momos point</span>
+<i class="bi bi-star-fill text-white bg-success p-1" style="border-radius:50px;margin-left:5px"></i><span style="font-size:20px;padding:10px">4.1</span><br>
+<span style="font-size:19px">fast food,north indian</span><hr>
+<span> mangalam.7.9km </span><span class="btn btn-success mx-2" style="font-size:20px">order now</span></section></div>
+
+
+
+
+<!---------------------------------------pic9-------------------------------->
+
+<div class="col my-1"><section id="p1"><div class="card img-fluid" style="border-radius:20px"><img id="item1"src="https://b.zmtcdn.com/data/dish_photos/847/9b9173d9e1707bdd6eb2a0cee0aeb847.jpg">
+<div class="card-img-overlay text-white">
+<h1 class="card-title" style="margin-top:150px;font-size:30px"> 25% OFF</h1><h3 style="font-size:20px">UPTO 170/- </h3></div></div>
+<span style="font-size:20px">The momo corner</span>
+<i class="bi bi-star-fill text-white bg-success p-1" style="border-radius:50px;margin-left:20px"></i><span style="font-size:20px;padding:10px">4.3</span><br>
+<span style="font-size:19px">momos,chinese</span><hr>
+<span> sri padmavati .10.2km </span><span class="btn btn-success" style="font-size:20px">order now</span></section></div>
+
+
+
+<!---------------------------------------pic10-------------------------------->
+
+<div class="col my-5"><section id="p1"><div class="card img-fluid" style="border-radius:20px"><img id="item1"src="https://b.zmtcdn.com/data/dish_photos/a38/e5e2b9515cbf06049b6109d2808a9a38.jpg">
+<div class="card-img-overlay text-white">
+<h1 class="card-title" style="margin-top:150px;font-size:30px"> 45% OFF</h1><h3 style="font-size:20px">UPTO 350/- </h3></div></div>
+<span style="font-size:20px">Kathi express</span>
+<i class="bi bi-star-fill text-white bg-success p-1" style="border-radius:50px;margin-left:70px"></i><span style="font-size:20px;padding:10px">4.4</span><br>
+<span style="font-size:19px">momos,shawarmas</span><hr>
+<span> kornalgunta. 7.5km </span><span class="btn btn-success mx-2" style="font-size:20px">order now</span></section></div>
+
+
+
+
+<!---------------------------------------pic11-------------------------------->
+
+<div class="col my-5"><section id="p1"><div class="card img-fluid" style="border-radius:20px"><img id="item1"src="https://b.zmtcdn.com/data/dish_photos/4e3/dc70b2e7ef43c7697fdd53f19e9304e3.jpg">
+<div class="card-img-overlay text-white">
+<h1 class="card-title" style="margin-top:150px;font-size:30px"> 65% OFF</h1><h3 style="font-size:20px">UPTO 250/- </h3></div></div>
+<span style="font-size:20px">The momos corner</span>
+<i class="bi bi-star-fill text-white bg-success p-1" style="border-radius:50px;margin-left:20px"></i><span style="font-size:20px;padding:10px">3.5</span><br>
+<span style="font-size:19px">momos,rolls</span><hr>
+<span> managalam. 10.0km </span><span class="btn btn-success mx-1" style="font-size:20px">order now</span></section></div>
+
+
+
+
+
+
+<!---------------------------------------pic12-------------------------------->
+
+<div class="col my-5"><section id="p1"><div class="card img-fluid" style="border-radius:20px"><img id="item1"src="https://b.zmtcdn.com/data/pictures/6/20647096/f8cfb327ee19abcdbf13338b31d1c993_o2_featured_v2.jpg">
+<div class="card-img-overlay text-white">
+<h1 class="card-title" style="margin-top:150px;font-size:30px"> 25% OFF</h1><h3 style="font-size:20px">UPTO 185/- </h3></div></div>
+<span style="font-size:20px">Gupshup momos</span>
+<i class="bi bi-star-fill text-white bg-success p-1" style="border-radius:50px;margin-left:30px"></i><span style="font-size:20px;padding:10px">4.7</span><br>
+<span style="font-size:19px">momos,desserts</span><hr>
+<span>Tata nagar .12.2km </span><span class="btn btn-success mx-1" style="font-size:20px">order now</span></section></div>
+
+<a href="bootstrapwebsite.html"><span class="btn btn-light " style="font-size:20px">  &laquo previous</span></a>
+<a href="pizza.html"><span class="btn btn-light  float-end " style="font-size:20px"> next &raquo</span></a>
+<br>
+</body>
+</html>

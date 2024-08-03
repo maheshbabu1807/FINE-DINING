@@ -1,0 +1,315 @@
+#pizza-filename
+<html>
+<head>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+ 
+<style>
+*{
+font-family:serif;
+}
+.one{
+top:0px;
+}
+#c1,#c2,#c3{
+border-radius:0px;
+box-shadow:none;
+width:900px;
+height:600px;
+margin:auto;
+}
+
+img{
+width:280px;
+height:250px;
+border-radius:20px;
+}
+section #p1{
+background-color:white;
+border-radius:20px;
+width:310px;
+height:auto;
+padding:15px;
+}
+section #p1:hover{
+box-shadow:1px 2px 5px black;
+transition-duration:1s;
+}
+#icon{
+width:100px;
+height:60px;
+border-radius:50%;
+}
+#con1{
+font-size:30px;
+}
+#con1:hover p{
+display:inline;
+}
+</style>
+</head>
+<body>
+<!--------------------------------------------------------------nav-------------------------------------------------------->
+
+<nav class="one container-fluid bg-white fixed-top">
+<div class="container-fluid">
+<div class="row"><div class="col m-2" style="font-size:20px;color:brown;text-shadow:1px 1px 2px brown"><img id="icon" src="data:image/png;base64,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">
+
+
+PIZZA'S</div>
+
+
+<div style="border:2px solid grey;border-radius:20px;height:30px;box-shadow:2px 2px 3px grey;width:250px">search for your dish
+    &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp<i class="bi-search"></i></div>
+    <div  style="border:2px solid grey;border-radius:20px;height:30px;box-shadow:2px 2px 3px grey;width:150px">location
+    &nbsp &nbsp &nbsp &nbsp <i class="bi bi-geo-alt-fill"></i></div>
+    <div  style="border:2px solid grey;border-radius:20px;height:30px;box-shadow:2px 2px 3px grey;width:180px">choose restaurant
+    
+     &nbsp &nbsp <i class="bi bi-house-door-fill"></i></div>
+    
+    <div class="col-2 d-none d-sm-block" active style="font-size:20px;color:black">login|signup<i class="bi bi-box-arrow-in-right "></i> 
+    </div>
+    <!------------------------------------------------offcanvas--------------------------------------------->
+<div class="col-2 "  data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" style="font-size:20px;color:grey"active>
+    <i class="bi bi-toggle-on" style="font-size:30px"></i></button>
+    
+    <div class="offcanvas offcanvas-end" id="offcanvasRight">
+      <div class="offcanvas-header">
+        <h1 class="offcanvas-title text-dark" id="offcanvasRightLabel">LOGIN DETAILS</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+       
+    <div class="container  text-dark" >
+    <div class="row">
+    <div class="col"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuPRVGx4ZNIeQ7sMzFQrIaZM--NaEpSNlw6g&usqp=CAU"  style="width:100px;height:100px"></div>
+    <div class="col">RUCHITHA.K<br>id:@its_me_ruchitha08</div>
+    <div class="col mt-3"  style="font-size:25px"><p><a href="mainpage.html" class="nav-link"><i class="bi bi-house-door-fill mx-3"></i>Home</p>
+    <p><i class="bi bi-gear-fill mx-3"></i>Settings</p>
+    <p><i class="bi bi-save-fill mx-3"></i>Saved</p>
+    <p><i class="bi bi-star-fill mx-3"></i>Most ordered</p>
+    <p><i class="bi bi-bell-fill mx-3"></i>Notifications</p>
+    <p><i class="bi bi-geo-alt-fill mx-3"></i>Location</p>
+    <p><i class="bi bi-person-lines-fill mx-3"></i>Contact</p>
+    <p><i class="bi bi-box-arrow-right mx-3"></i>Logout</p>
+    </div>
+    
+    
+    </div>
+    </div>
+      </div>
+    
+    </div></div></div>
+    
+<!------------------------dropdown--------------------->
+
+ <div class="container">
+<div class="row">
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+<div class="col-1-sm "style="border:2px solid grey;border-radius:20px;height:30px;box-shadow:2px 2px 3px grey;width:90px">
+ 
+<div class="btn-group">
+<a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">pure veg</a>
+<div class="dropdown-menu">
+  <a class="dropdown-item" href="#" >paneer</a>
+  <a href="#" class="dropdown-item">cakes</a>
+<a href="#" class="dropdown-item">veg rolls</a>
+<a href="#" class="dropdown-item">Thali</a>
+<a href="momos.html" class="dropdown-item">momos</a>
+
+<a href="pizza.html" class="dropdown-item">pizza</a></div></div></div>
+<div class="col-1-sm mx-3"style="border:2px solid grey;border-radius:20px;height:30px;box-shadow:2px 2px 3px grey;width:90px"><div class="btn-group">
+<a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">non veg</a>
+<div class="dropdown-menu">
+  <a class="dropdown-item" href="biriyani.html" >biriyani</a>
+  <a href="#" class="dropdown-item">chicken</a>
+<a href="#" class="dropdown-item">non veg rolls</a></div></div></div>
+<div class="col-1-sm mx-3"style="border:2px solid grey;border-radius:20px;height:30px;box-shadow:2px 2px 3px grey;width:90px">
+  <b class="nav-link dropdown-toggle" data-bs-toggle="dropdown">cuisines</b>
+<div class="dropdown-menu">
+  <div class="dropdown-item" ><input type="text" class="form-control-sm m-1 bg-light "placeholder="search here" style="width:150px;font-size:20px">
+<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></div>
+
+ <span  class="dropdown-item"><a href="momos.html" class="nav-link"><input type="checkbox" class="form-check-input" id="check1" name="option1" value="something">momos</a></span>
+
+
+<span  class="dropdown-item "><a href="biriyani.html" class="nav-link"><input type="checkbox" class="form-check-input" id="check1" name="option1" value="something">biryani</a></span>
+
+<span class="dropdown-item"><input type="checkbox" class="form-check-input" id="check1" name="option1" value="something">burger</span>
+<span  class="dropdown-item"><input type="checkbox" class="form-check-input" id="check1" name="option1" value="something">bakery</span>
+<span  class="dropdown-item"><input type="checkbox" class="form-check-input" id="check1" name="option1" value="something">bubble tea</span>
+<span class="dropdown-item"><a href="momos.html" class="nav-link"><input type="checkbox" class="form-check-input" id="check1" name="option1" value="something">pizza</a></span>
+ </div></div>
+<div class="col-1-sm mx-3"style="border:2px solid grey;border-radius:20px;height:30px;box-shadow:2px 2px 3px grey;width:110px">ratings 4.0+</div>
+<div class="col-1-sm mx-3"style="border:2px solid grey;border-radius:20px;height:30px;box-shadow:2px 2px 3px grey;width:140px">more filters
+&nbsp &nbsp <i class="bi bi-sort-down"></i></div>
+</div></div><br>
+</nav>
+
+
+<br><br><br><br>
+<!-------------------------------------------------------------carousel--------------------------------------------->
+<div class="container-sm my-3">
+<div class="carousel slide" data-bs-ride="carousel" id="mycarousel">
+
+<!---------------------------------------------------------carousel indicators----------------------------------------->
+<ol class="carousel-indicators">
+<li data-bs-target="#mycarousel" data-bs-slide-to="0" class="active"></li>
+<li data-bs-target="#mycarousel" data-bs-slide-to="1" ></li>
+<li data-bs-target="#mycarousel" data-bs-slide-to="2" ></li>
+</ol>
+<!--------------------------------------------------------carousel items-------------------------------------------------->
+<div class="carousel-inner">
+<div class="carousel-item active">
+<img id="c1" src="https://24.media.tumblr.com/0a7cd3a9bf0e181e76f29201bf217991/tumblr_mhkyicnQNw1qmhcbao1_500.gif" class="d-block w-100" alt="slide 1">
+</div>
+<div class="carousel-item">
+<img id="c2"src="https://b.zmtcdn.com/data/dish_photos/ed0/e4dbf5ebfdf6c09e0d7d49efb4a62ed0.png" class="d-block w-100" alt="slide2">
+
+</div>
+<div class="carousel-item">
+<img id="c3" src="https://b.zmtcdn.com/data/dish_photos/f0e/542031b63c27b281d3afe9eb1cffef0e.png" class="d-block w-100" alt="slide3">
+
+</div>
+</div>
+<!--------------------------------------------------------------carousel controls----------------------------------------------------->
+<a href="#mycarousel" class="carousel-control-prev w-50" data-bs-slide="prev">
+<span class="carousel-control-prev-icon"></span></a>
+<a href="#mycarousel" class="carousel-control-next w-50" data-bs-slide="next">
+<span class="carousel-control-next-icon"></span></a>
+</div>
+
+</div>
+
+<br>
+<p style="font-size:40px;color:brown;text-align:center">A SLICE A DAY KEEPS THE SAD AWAY</p>
+
+<!------------------------------pizza hut---------------------------------------->
+
+<section class="container-sm">
+<div class="row">
+<!--------------------------------pic1-------------------------->
+
+<div class="col"><section id="p1"><div class="card img-fluid" style="border-radius:20px"><img src="https://b.zmtcdn.com/data/dish_photos/574/9fa0da9f0edf3f27fea09f3f33a33574.jpg" class="card-image-top">
+<div class="card-img-overlay text-white">
+<h3 class="card-title" style="margin-top:150px">50% OFF</h3><p style="font-size:20px">UPTO 100/- </p></div></div><span style="font-size:20px">Oven story pizza</span>
+<i class="bi bi-star-fill text-white bg-success p-1" style="border-radius:50px;margin-left:60px"></i><span style="font-size:20px;padding:10px">4.5</span><br>
+<span style="font-size:19px">pizza,fast food</span><hr>
+<span> Tirumala .9.7km</span> &nbsp <span class="btn btn-success mx-4" style="font-size:20px">order now</span></section></div>
+
+<!-----------------------------------pic2--------------------------->
+
+<div class="col"><section id="p1"><div class="card img-fluid" style="border-radius:20px"><img src="https://b.zmtcdn.com/data/dish_photos/4d0/312fb889dc08887f9e87fc2b7b4154d0.jpg">
+<div class="card-img-overlay text-white">
+<h1 class="card-title" style="margin-top:150px;font-size:30px"> 60% OFF</h1><h3 style="font-size:20px">UPTO 150/- </h3></div></div>
+<span style="font-size:20px"> Laziz pizza</span>
+<i class="bi bi-star-fill text-white bg-success p-1" style="border-radius:50px;margin-left:100px"></i><span style="font-size:20px;padding:10px">4.1</span><br>
+<span style="font-size:19px">pizza,fast food,dessert...</span><hr>
+<span> Korlagunta .5.7km </span><span class="btn btn-success mx-4" style="font-size:20px">order now</span></section></div>
+
+<!-----------------------------------------pic3------------------------------------------>
+
+<div class="col"><section id="p1"><div class="card img-fluid" style="border-radius:20px"><img src="https://b.zmtcdn.com/data/dish_photos/740/7fb24d51a61d9b80548c20e2d140d740.jpg">
+<div class="card-img-overlay text-white">
+<h1 class="card-title" style="margin-top:150px;font-size:30px"> 40% OFF</h1><h3 style="font-size:20px">UPTO 90/- </h3></div></div>
+<span style="font-size:20px"> New pizza</span>
+
+<i class="bi bi-star-fill text-white bg-success p-1" style="border-radius:50px;margin-left:100px"></i><span style="font-size:20px;padding:10px">4.3</span><br>
+<span style="font-size:19px">pizza,sandwich,fastfood...</span><hr>
+<span> Tiruchanur. 12.3km</span><span class="btn btn-success mx-3" style="font-size:20px">order now</span></section></div>
+
+
+<!-----------------------------------------pic4------------------------------------------>
+
+<div class="col my-3"><section id="p1"><div class="card img-fluid" style="border-radius:20px"><img src="https://b.zmtcdn.com/data/dish_photos/384/0bce1b86452f8ae3981ce49496913384.jpg">
+
+<div class="card-img-overlay text-white">
+<h1 class="card-title" style="margin-top:150px;font-size:30px"> 75% OFF</h1><h3 style="font-size:20px">UPTO 200/- </h3></div></div>
+<span style="font-size:20px">Pushpak misthan bhandar</span>
+
+<i class="bi bi-star-fill text-white bg-success p-1" style="border-radius:50px;margin-left:190px"></i><span style="font-size:20px;padding:10px">4.3</span><br>
+<span style="font-size:19px">Mithai,street food</span><hr>
+<span>Tata nagar.10.1km</span><span class="btn btn-success mx-3" style="font-size:20px">order now</span></section></div>
+
+
+<!-----------------------------------------pic5------------------------------------------>
+
+<div class="col my-3"><section id="p1"><div class="card img-fluid" style="border-radius:20px"><img src="https://b.zmtcdn.com/data/dish_photos/f18/7c3cf430ebdbd8fb9ea9da95eb886f18.jpg">
+
+<div class="card-img-overlay text-white">
+<h1 class="card-title" style="margin-top:150px;font-size:30px"> 45% OFF</h1><h3 style="font-size:20px">UPTO 70/- </h3></div></div>
+<span style="font-size:20px">GMB-pizza</span>
+
+<i class="bi bi-star-fill text-white bg-success p-1" style="border-radius:50px;margin-left:100px"></i><span style="font-size:20px;padding:10px">3.9</span><br>
+<span style="font-size:19px">Desserts,north india..</span><hr>
+<span>Tirupati.10.6km</span><span class="btn btn-success mx-3" style="font-size:20px">order now</span>
+</section></div>
+
+
+<!-----------------------------------------pic6------------------------------------------>
+
+<div class="col my-3"><section id="p1"><div class="card img-fluid" style="border-radius:20px"><img src="https://b.zmtcdn.com/data/dish_photos/e26/701f18208f8bcc064a654d7d8d983e26.jpg?output-format=webp">
+
+<div class="card-img-overlay text-white">
+<h1 class="card-title" style="margin-top:150px;font-size:30px"> 65% OFF</h1><h3 style="font-size:20px">UPTO 170/- </h3></div></div>
+<span style="font-size:20px">Big crust</span>
+
+<i class="bi bi-star-fill text-white bg-success p-1" style="border-radius:50px;margin-left:120px"></i><span style="font-size:20px;padding:10px">3.7</span><br>
+<span style="font-size:19px">pizza ,pasta</span><hr>
+<span>srinivasa nagar. 10.9km</span><span class="btn btn-success mx-1" style="font-size:20px">order now</span>
+</section></div>
+
+<!-----------------------------------------pic7------------------------------------------>
+
+<div class="col my-3"><section id="p1"><div class="card img-fluid" style="border-radius:20px"><img src="https://b.zmtcdn.com/data/pictures/7/19526917/72c7b946df07c0d72499a6dc4ce4d7db_o2_featured_v2.jpg">
+
+<div class="card-img-overlay text-white">
+<h1 class="card-title" style="margin-top:150px;font-size:30px"> 55% OFF</h1><h3 style="font-size:20px">UPTO 185/- </h3></div></div>
+<span style="font-size:20px">D'zurt cafe</span>
+
+<i class="bi bi-star-fill text-white bg-success p-1" style="border-radius:50px;margin-left:100px"></i><span style="font-size:20px;padding:10px">3.7</span><br>
+<span style="font-size:19px">cafe,burger,fast food...</span><hr>
+<span>mangalam. 7.7km</span><span class="btn btn-success mx-1" style="font-size:20px">order now</span>
+</section></div>
+
+<!-----------------------------------------pic8------------------------------------------>
+
+<div class="col my-3"><section id="p1"><div class="card img-fluid" style="border-radius:20px"><img src="https://b.zmtcdn.com/data/dish_photos/ecd/7287108d15d8b2adcee5d4b335f06ecd.jpg">
+
+<div class="card-img-overlay text-white">
+<h1 class="card-title" style="margin-top:150px;font-size:30px"> 85% OFF</h1><h3 style="font-size:20px">UPTO 199/- </h3></div></div>
+<span style="font-size:20px">Cake house</span>
+
+<i class="bi bi-star-fill text-white bg-success p-1" style="border-radius:50px;margin-left:100px"></i><span style="font-size:20px;padding:10px">4.5</span><br>
+<span style="font-size:19px">bakery,fastfood..</span><hr>
+<span>vidyut nagar. 12.1km</span><span class="btn btn-success mx-1" style="font-size:20px">order now</span>
+</section></div>
+
+
+<!-----------------------------------------pic9------------------------------------------>
+
+<div class="col my-3"><section id="p1"><div class="card img-fluid" style="border-radius:20px"><img src="https://b.zmtcdn.com/data/dish_photos/7c2/2a848c7f13a0fa520cd1bd34c4d1a7c2.jpg">
+
+<div class="card-img-overlay text-white">
+<h1 class="card-title" style="margin-top:150px;font-size:30px"> 66% OFF</h1><h3 style="font-size:20px">UPTO 229/- </h3></div></div>
+<span style="font-size:20px">Hungernomia</span>
+
+<i class="bi bi-star-fill text-white bg-success p-1" style="border-radius:50px;margin-left:80px"></i><span style="font-size:20px;padding:10px">4.8</span><br>
+<span style="font-size:19px">pizza,fast food</span><hr>
+<span>tirupati .6.1km</span><span class="btn btn-success mx-1" style="font-size:20px">order now</span>
+</section></div>
+
+
+</section></div>
+<a href="part2.html"><span class="btn btn-light m-3" style="font-size:20px">  &laquo previous</span></a>
+<a href="biriyani.html"><span class="btn btn-light my-3 float-end" style="font-size:20px"> next &raquo</span></a>
+<br>
+
+
+</body>
+</html>
